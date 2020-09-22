@@ -1,0 +1,32 @@
+name: Start on Pages
+on:
+  push:
+    branches:
+      - trunk
+    tags:
+      - "!*"
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          repository: yokobond/scratch-gui
+          ref: xcratch
+          path: ./scratch-gui
+      - run: npm install
+        working-directory: ./scratch-gui
+      - uses: actions/checkout@v2
+        with:
+          path: ./xcratch
+      - run: node ./scripts/replace-logo.js ../scratch-gui
+        working-directory: ./xcratch
+      - run: npm run build
+        working-directory: ./scratch-gui
+      - run: cp ./xcratch/site/index.html ./scratch-gui/build/index.html
+      - run: cp ./xcratch/site/favicon.ico ./scratch-gui/build/static/favicon.ico
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./scratch-gui/build

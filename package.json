@@ -1,0 +1,27 @@
+{
+  "name": "xcratch",
+  "version": "0.0.1",
+  "description": "Extended Scratch3 Programming Environment",
+  "scripts": {
+    "setup": "node ./scripts/replace-logo.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yokobond/xcratch.git"
+  },
+  "keywords": [
+    "scratch",
+    "education"
+  ],
+  "author": "Koji Yokokawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yokobond/xcratch/issues"
+  },
+  "homepage": "https://github.com/yokobond/xcratch#readme",
+  "devDependencies": {
+    "eslint": "^7.9.0"
+  },
+  "dependencies": {}
+}

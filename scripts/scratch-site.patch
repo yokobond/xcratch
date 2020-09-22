@@ -1,0 +1,13 @@
+diff --git a/src/components/stage-header/stage-header.jsx b/src/components/stage-header/stage-header.jsx
+index 4084f6bfc..a6455a9da 100644
+--- a/src/components/stage-header/stage-header.jsx
++++ b/src/components/stage-header/stage-header.jsx
+@@ -68,7 +68,7 @@ const StageHeaderComponent = function (props) {
+         const stageButton = showBranding ? (
+             <div className={styles.embedScratchLogo}>
+                 <a
+-                    href="https://scratch.mit.edu"
++                    href="https://github.com/yokobond/xcratch"
+                     rel="noopener noreferrer"
+                     target="_blank"
+                 >
