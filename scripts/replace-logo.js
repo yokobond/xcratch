@@ -16,7 +16,7 @@ fs.copyFileSync(
 // Replace homepage.
 try {
     stdout = execSync(
-        `cd ${GuiRoot} && patch -p1 -N -s --no-backup-if-mismatch < ${path.resolve(__dirname, './scratch-site.patch')}`
+        `cd ${GuiRoot} && patch -p1 -N -s --no-backup-if-mismatch < ${path.resolve(__dirname, './logo-link.patch')}`
     );
     console.log(`stdout: ${stdout.toString()}`);
 } catch (err) {
