@@ -3,7 +3,8 @@
   "version": "0.0.1",
   "description": "Extended Scratch3 Programming Environment",
   "scripts": {
-    "setup": "node ./scripts/replace-logo.js",
+    "setup:dev": "node ./scripts/setup-dev.js",
+    "setup:dist": "node ./scripts/replace-logo.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
