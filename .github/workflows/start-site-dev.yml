@@ -28,11 +28,8 @@ jobs:
         working-directory: ./scratch-gui
       - run: cp ./xcratch/site/index.html ./scratch-gui/build/index.html
       - run: cp ./xcratch/site/favicon.ico ./scratch-gui/build/static/favicon.ico
-      - run: |
-          mkdir public
-          mv ./scratch-gui/build ./public/dev
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./public
-          keep_files: true
+          publish_dir: ./scratch-gui/build
+          destination_dir: ./dev
