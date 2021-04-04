@@ -2,7 +2,7 @@ name: Start on Pages
 on:
   push:
     branches:
-      - trunk
+      - trunk-stop
     tags:
       - "!*"
 
