@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"name": "xcratch",
+			"path": "."
+		},
+		{
+			"name": "xcratch-example",
+			"path": "../xcratch-example"
+		},
+		{
+			"name": "scratch-vm",
+			"path": "../scratch-gui/node_modules/scratch-vm"
+		},
+		{
+			"name": "scratch-gui",
+			"path": "../scratch-gui"
+		}
+	],
+	"settings": {
+		"eslint.format.enable": true,
+		"liveServer.settings.multiRootWorkspaceName": "xcratch-example",
+		"liveServer.settings.port": 5501
+	}
+}
