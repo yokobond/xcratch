@@ -1,3 +1,6 @@
+
+> :warning: **This project was moved to** https://xcratch.github.io/
+
 # Xcratch
 Extendable Scratch3 Programming Environment
 
